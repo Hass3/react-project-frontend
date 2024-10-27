@@ -1,0 +1,20 @@
+*{
+    margin: 0%;
+}
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0px;
+    background-color: #c30000fc;
+    color: white;
+  }
+  
+  .nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    color:aqua;
+    
+  }
+ 
+  
