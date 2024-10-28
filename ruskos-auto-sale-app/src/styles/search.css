@@ -1,0 +1,10 @@
+.content{
+    justify-self: center;
+}
+
+.search{
+  text-align: center;
+  width: 900px;
+  font-style: italic;
+  font-weight: bolder;
+}
