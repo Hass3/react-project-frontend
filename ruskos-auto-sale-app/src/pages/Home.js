@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import NavBar from '../components/NavBar'
 import Search from '../components/Search'
+import CarForm from '../components/CarForm'
 function Home(){
     
 
@@ -9,6 +10,7 @@ function Home(){
         <NavBar />
         <Header />
         <Search />
+        <CarForm />
        </>
     )
 }

@@ -12,7 +12,9 @@ function About (){
             ABOUT US
         </h1>
         <article>
-            null
+            We are a team dedicated to help people across the country find their dream cars listed by people across the country,
+            
+            
         </article>
         </>
 

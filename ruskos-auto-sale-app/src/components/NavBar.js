@@ -15,9 +15,9 @@ function NavBar(){
             About
         </NavLink>
         <NavLink
-        to='/listcar'
+        to='/support'
         className="logo">
-            List A Car
+            Support Us
         </NavLink>
     </nav>
 )

@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
-import ListCar from './pages/ListCar'
 import ErrorPage from "./pages/ErrorPage";
+import Support from "./pages/Support";
 
 
 const routes = [
@@ -16,8 +16,8 @@ const routes = [
         errorElement:<ErrorPage />
     },
     {
-        path:'/listcar',
-        element:<ListCar/>,
+        path:'/support',
+        element:<Support/>,
         errorElement:<ErrorPage />
     }
 ];
