@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
 import Support from "./pages/Support";
-
+import Car from "./components/Car";
 
 const routes = [
     {
@@ -18,6 +18,11 @@ const routes = [
     {
         path:'/support',
         element:<Support/>,
+        errorElement:<ErrorPage />
+    },
+    {
+        path:'/carvitals/:id',
+        element:<Car />,
         errorElement:<ErrorPage />
     }
 ];

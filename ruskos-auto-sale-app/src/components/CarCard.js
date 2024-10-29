@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 function CarCard({car}){
     const [fav, setFav] = useState(false)
 
@@ -11,7 +12,7 @@ function CarCard({car}){
             <h2 className="year">{car.year}</h2>
             <h3>{"$"+car.price}</h3>
             <p>{car.seller}</p>
-            <button className="click-car">Click here</button>
+                <Link className="link" to={`/carvitals/${car.id}`}>Click Here</Link>
         </div>
     )
 

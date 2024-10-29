@@ -7,8 +7,9 @@ function CarPage({cars}){
     function onSearch(search){
         setSearched(search)
     }
+
     const displayedCars = cars.filter(car=> 
-        car.make.toLowerCase().includes(searched.toLowerCase()) || car.model.toLowerCase().includes(searched.toLowerCase()))
+       car.make.toLowerCase().includes(searched.toLowerCase()) || car.model.toLowerCase().includes(searched.toLowerCase()))
 
     return(
         <>
