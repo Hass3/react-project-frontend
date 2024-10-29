@@ -6,6 +6,7 @@ function CarPage(){
     return(
         <>
         <Search />
+        <br/>
         <CarContainer />
         </>
     )

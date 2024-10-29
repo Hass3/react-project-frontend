@@ -2,13 +2,10 @@
 function CarCard(){
 
     return(
-        <div>
-            <h3></h3>
-            <img src="" alt="" />
-            <p></p>
-            <p></p>
-            <button></button>
-        </div>
+        <div className="car-card">
+            <h1 className="card-title"></h1>
+            <img className="card-image"/>
+            </div>
     )
 
 

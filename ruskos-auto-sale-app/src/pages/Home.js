@@ -14,7 +14,7 @@ function Home(){
        <div className='home'>
         <NavBar />
         <Header />
-        <button onClick={handleFormClick} style={{background : "red"}}>{!isFormOn?"List Car" : "Back"}</button>
+        <button className={!isFormOn?"list-btn": "back-btn"} onClick={handleFormClick}>{!isFormOn?"List Car" : "Back"}</button>
         {!isFormOn? <CarPage /> : <CarForm/>   }
 
        </div>
