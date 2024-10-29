@@ -5,17 +5,20 @@ import CarForm from '../components/CarForm'
 import CarPage from '../components/CarPage'
 function Home(){
     const[isFormOn, setIsFormOn] = useState(false)
-
+    const [cars, setCars]= useState([])
     const handleFormClick=()=> setIsFormOn((isOn)=> !isOn)
-
-
+    useEffect(()=>{
+        fetch('http://localhost:3001/Cars')
+        .then(r=>r.json())
+        .then(data=> setCars(data))
+    },[])
 
     return(
        <div className='home'>
         <NavBar />
         <Header />
         <button className={!isFormOn?"list-btn": "back-btn"} onClick={handleFormClick}>{!isFormOn?"List Car" : "Back"}</button>
-        {!isFormOn? <CarPage /> : <CarForm/>   }
+        {!isFormOn? <CarPage cars={cars} /> : <CarForm/>   }
 
        </div>
     )

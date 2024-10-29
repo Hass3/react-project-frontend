@@ -1,11 +1,15 @@
 import CarCard from "./CarCard"
 
-function CarContainer(){
+function CarContainer({cars}){
 
     return(
-
     <div className="card-container">
-       <CarCard/>
+        
+       {cars.map(car=>
+        <CarCard 
+        key={car.id}
+        car={car}
+        />)}
     </div>
     )
     

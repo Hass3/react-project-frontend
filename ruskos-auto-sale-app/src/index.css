@@ -38,17 +38,32 @@
     justify-content: left;
 }
 .car-card{
-    border: 1px solid;
+    border: 3px solid;
     border-radius: 5px;
-    padding: 100px;
+    padding: 20px;
     margin-bottom: 20px;
+    width: 250px;
+}
+.car-card:hover{
+    color: red;
 }
 .card-title{
     font-weight: bold;
     margin-bottom: 10px;
+    justify-self: center;
 }
 .card-image{
-    width:50px;
-    height:50px
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
 }
 
+.price{
+    justify-self: right;
+}
+.remove-fav{
+    background-color: red;
+}
+.click-car{
+    background-color: red;
+}
