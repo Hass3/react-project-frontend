@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar"
 import Header from "../components/Header"
-import "../styles/About.css"
+
 
 function About (){
  

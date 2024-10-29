@@ -1,5 +1,5 @@
 import { useState } from "react"
-import '../styles/search.css'
+
 function Search(){
     const[searchValue, setSearchValue] = useState('')
     function handleOnChange(e){
