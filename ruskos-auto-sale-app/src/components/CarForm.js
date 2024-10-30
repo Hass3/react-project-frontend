@@ -83,6 +83,7 @@ function CarForm({onAddCar}){
             placeholder="owner..."
             value={sellerInput}
             onChange={e=>setSellerInput(e.target.value)} />
+            <br/>
             <button className="form-btn" type="submit">List Car</button>
         </form>
         { listed ?<h1>Thank You {name} for submmiting your {year} {make} {model} your Vehicle is now listed</h1>: null}

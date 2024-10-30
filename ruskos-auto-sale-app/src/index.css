@@ -73,19 +73,28 @@
 
 .car-form{
     justify-self: center;
+    background-color: black;
+    width: 400px;
+    height: 300px;
+    justify-items: center;
 }
  
 .carform-title{
     color: red;
+    font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .form-input{
+    width: 300px;
+    height:30px;
     color: rgb(0, 0, 0);
     border: 1px solid;
     border-radius: 5px;
     font-style: italic;
 }
 .form-btn{
+    display: flex;
+    margin-left: 65%;
     border-radius: 5px;
     font-weight: bold;
     background-color: red;
@@ -99,8 +108,7 @@
     width: 300px;
     height: 400px;
     padding: 17px;
-    justify-self:center
-
+    
 }
 .car-div:hover{
     color: rgb(97, 97, 97);
@@ -110,8 +118,4 @@
     height: 194px;
     justify-self:center;
     object-fit:contain;
-}
-
-.center{
-    justify-self: center;
 }
