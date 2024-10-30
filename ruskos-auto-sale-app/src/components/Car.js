@@ -38,7 +38,12 @@ function Car(){
             {sent ? <p> Your message was sent {name} the owner still has not read</p>: null}
          </form>
         <div className="car-div">
+            <h2>{car.make}</h2>
+            <h3>{car.model}</h3>
+            <h3>{car.year}</h3>
          <img className="car-img" src={car.image} alt={car.make} />
+         <h2 style={{color:"red"}}>${car.price}</h2>
+         <h4>Owner:{car.seller}</h4>
          </div>
     </>
     )
