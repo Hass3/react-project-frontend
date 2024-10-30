@@ -35,8 +35,11 @@ function Car(){
             <br/>
             <input placeholder="please put your name here" value={nameInput} onChange={e=>setNameInput(e.target.value)}/>
             <button>Send</button>
-            {sent ? <p> Your message was sent {name} the seller will recive it soon</p>: null}
+            {sent ? <p> Your message was sent {name} the owner still has not read</p>: null}
          </form>
+        <div className="car-div">
+         <img className="car-img" src={car.image} alt={car.make} />
+         </div>
     </>
     )
 

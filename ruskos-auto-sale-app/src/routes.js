@@ -21,7 +21,7 @@ const routes = [
         errorElement:<ErrorPage />
     },
     {
-        path:'/carvitals/:id',
+        path:'/carseller/:id',
         element:<Car />,
         errorElement:<ErrorPage />
     }
