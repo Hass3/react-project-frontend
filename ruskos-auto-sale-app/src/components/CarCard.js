@@ -12,7 +12,7 @@ function CarCard({car}){
             <h2 className="year">{car.year}</h2>
             <h3>{"$"+car.price}</h3>
             <p>{car.seller}</p>
-                <Link className="link" to={`/carvitals/${car.id}`}>Click Here</Link>
+                <Link className="link" to={`/carvitals/${car.id}`}>Send Private Message</Link>
         </div>
     )
 

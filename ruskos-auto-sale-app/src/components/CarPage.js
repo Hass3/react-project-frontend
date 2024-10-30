@@ -14,7 +14,7 @@ function CarPage({cars}){
     return(
         <>
         <Search onSearch={onSearch} />
-        <h1 style={{justifySelf: "center"}}>Select Any Vehicle</h1>
+        <h1 style={{justifySelf: "center"}}>Browse Vehicles</h1>
         <br/>
         <CarContainer cars={displayedCars} />
         </>

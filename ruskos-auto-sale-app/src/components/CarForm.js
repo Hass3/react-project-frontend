@@ -7,10 +7,46 @@ function CarForm({onAddCar}){
     const [priceInput, setPriceInput]= useState('');
     const [imgInput, setImgInput] = useState('');
     const [sellerInput, setSellerInput]=useState('');
-    
+    const [listed, setListed] = useState(false);
+    const [name,setName] = useState('');
+    const [make, setMake]=useState('');
+    const [model, setModel]= useState('')
+    const [year, setYear]= useState('');
+    function handleSubmit(e){
+        e.preventDefault();
+        const newCar = {
+            make: makeInput,
+            model: modelInput,
+            year: parseFloat(yearInput),
+            price: parseFloat(priceInput),
+            image:imgInput,
+            seller: sellerInput
+        }
+      fetch('http://localhost:3001/Cars', {
+        method:"POST",
+        headers:{"Content-Type": "application/json"},
+        body: JSON.stringify(newCar)
+      })
+        .then(r=>r.json())
+        .then(car=>onAddCar(car))
+        sellerInput === '' ? setListed(false) : setListed(true)
+        setName(sellerInput)
+        setMake(makeInput)
+        setModel(modelInput)
+        setYear(yearInput)
+        setMakeInput('');
+        setModelInput('');
+        setYearInput('');
+        setPriceInput('')
+        setImgInput('');
+        setSellerInput('');
+    }
+
+
+
     return(
         <>
-        <form className='car-form'>
+        <form onSubmit={handleSubmit} className='car-form'>
             <h2 className="carform-title">List Your Car Here</h2>
             <input
             className="form-input" 
@@ -49,7 +85,7 @@ function CarForm({onAddCar}){
             onChange={e=>setSellerInput(e.target.value)} />
             <button className="form-btn" type="submit">List Car</button>
         </form>
-        <h1></h1>
+        { listed ?<h1>Thank You {name} for submmiting your {year} {make} {model} your Vehicle is now listed</h1>: null}
         </>
     )
 }

@@ -19,23 +19,23 @@ function Car(){
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        setSent(true)
+        nameInput === ''? setSent(false) : setSent(true)
         setName(nameInput)
         setNameInput('');
         setMessageInput('');
     }
 
-    
+
     return(
     <>
         <NavBar/>
         <Header/>
          <form onSubmit={handleSubmit}>
-            <input  placeholder={`send message to ${car.seller}`} value={messageInput} onChange={e=> setMessageInput(e.target.value)}/>
+            <input placeholder={`send message to ${car.seller}`} value={messageInput} onChange={e=> setMessageInput(e.target.value)}/>
             <br/>
             <input placeholder="please put your name here" value={nameInput} onChange={e=>setNameInput(e.target.value)}/>
             <button>Send</button>
-            {sent ? <p> Your message was sent {`${name}`} the seller will recive it soon</p>: null}
+            {sent ? <p> Your message was sent {name} the seller will recive it soon</p>: null}
          </form>
     </>
     )
