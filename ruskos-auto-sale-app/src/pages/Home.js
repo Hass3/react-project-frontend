@@ -13,12 +13,17 @@ function Home(){
         .then(data=> setCars(data))
     },[])
 
+    function addCar(newCar){
+        setCars([...cars, newCar])
+    }
+
+
     return(
        <div className='home'>
         <NavBar />
         <Header />
         <button className={!isFormOn?"list-btn": "back-btn"} onClick={handleFormClick}>{!isFormOn?"List Car" : "Back"}</button>
-        {!isFormOn? <CarPage cars={cars} /> : <CarForm/>   }
+        {!isFormOn? <CarPage cars={cars} /> : <CarForm onAddCar ={addCar}/>   }
 
        </div>
     )

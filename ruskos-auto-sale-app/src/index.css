@@ -70,3 +70,23 @@
 .link:hover{
     color: rgb(0, 0, 0);
 }
+
+.car-form{
+    justify-self: center;
+}
+ 
+.carform-title{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-input{
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    border-radius: 5px;
+    font-style: italic;
+}
+.form-btn{
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: red;
+}

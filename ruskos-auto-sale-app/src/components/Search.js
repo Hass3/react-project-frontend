@@ -16,6 +16,8 @@ function Search({onSearch}){
         value={searchValue}
         onChange={handleOnChange}
         />
+        <input type="checkbox" placeholder="hi"/>
+        <label>Less Than $10,000</label>
         </div>
     )
 }
