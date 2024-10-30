@@ -3,11 +3,12 @@ import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 
 function Support(){
-    const[nameInput,setNameInput] = useState('');
-    const [emailInput, setEmailInput]=useState('');
-    const[name, setName] = useState('');
-    const[email, setEmail] = useState('');
-    const [isSent, setIsSent] = useState(false)
+    const[nameInput,setNameInput]=useState('');
+    const[emailInput, setEmailInput]=useState('');
+    const[name, setName]=useState('');
+    const[email, setEmail]=useState('');
+    const[isSent, setIsSent]=useState(false)
+    
     function handleSubmit(e){
         e.preventDefault();
         if(emailInput === '' || nameInput === '') setIsSent(false);
@@ -25,11 +26,15 @@ function Support(){
         <h2>Help and Support</h2>
         <p style={{fontSize:'20px'}}>Please Leave Your name and Email to support our ongoing bussiness and to keep up with updates</p>
         <form onSubmit={handleSubmit} className="support-form">
-            <input className="support-input" placeholder="name here..."
+            <input
+            className="support-input" 
+            placeholder="name here..."
             value={nameInput}
             onChange={e=>setNameInput(e.target.value)}
             />
-            <input className="support-input" placeholder='email here...'
+            <input 
+            className="support-input" 
+            placeholder='email here...'
             value={emailInput}
             onChange={(e)=> setEmailInput(e.target.value)}
             />
