@@ -2,7 +2,7 @@
 
 function Header(){
     return(
-        <header className='header' >
+        <header className='title-header' >
             Ruskos Auto Sale
         </header>
     )

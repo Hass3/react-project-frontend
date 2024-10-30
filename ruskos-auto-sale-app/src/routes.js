@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
 import Support from "./pages/Support";
-import Car from "./components/Car";
+import CarSellerPm from "./components/CarSellerPm";
 
 const routes = [
     {
@@ -22,7 +22,7 @@ const routes = [
     },
     {
         path:'/carseller/:id',
-        element:<Car />,
+        element:<CarSellerPm />,
         errorElement:<ErrorPage />
     }
 ];

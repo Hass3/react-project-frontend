@@ -1,22 +1,22 @@
 import { useState } from "react"
 
-function Search({onSearch}){
-    const[searchValue, setSearchValue] = useState('')
+function Search({ onSearch }) {
+    const [searchValue, setSearchValue] = useState('')
 
-    function handleOnChange(e){
+    function handleOnChange(e) {
         setSearchValue(e.target.value)
         onSearch(e.target.value)
     }
 
-    return(
+    return (
         <div className="content">
-        <input
-        type="input"
-        placeholder="Search Vehicle by Make or Model"
-        className="search"
-        value={searchValue}
-        onChange={handleOnChange}
-        />
+            <input
+                type="input"
+                placeholder="Search Vehicle by Make or Model"
+                className="search"
+                value={searchValue}
+                onChange={handleOnChange}
+            />
         </div>
     )
 }

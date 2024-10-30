@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import NavBar from "./NavBar"
 import Header from "./Header"
 import { useParams } from "react-router-dom"
-function Car() {
+function CarSellerPm() {
     const [car, setCar] = useState({})
     const [sent, setSent] = useState(false)
     const [messageInput, setMessageInput] = useState('');
@@ -50,4 +50,4 @@ function Car() {
 
 
 }
-export default Car
+export default CarSellerPm
