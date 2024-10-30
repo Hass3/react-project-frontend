@@ -10,8 +10,8 @@ function CarCard({car}){
             <img className="card-image" src={car.image} alt={car.make}/>           
             <h2>{car.model}</h2>
             <h2 className="year">{car.year}</h2>
-            <h3>{"$"+car.price}</h3>
-            <p>{car.seller}</p>
+            <h3>Price:{"$"+car.price}</h3>
+            <p>Owner:{car.seller}</p>
                 <Link className="link" to={`/carseller/${car.id}`}>Send Private Message</Link>
         </div>
     )

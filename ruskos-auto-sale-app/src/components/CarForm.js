@@ -42,6 +42,15 @@ function CarForm({onAddCar}){
         setSellerInput('');
     }
 
+    function clear(){
+        setMakeInput('');
+        setModelInput('');
+        setYearInput('');
+        setPriceInput('')
+        setImgInput('');
+        setSellerInput('');
+    }
+
 
 
     return(

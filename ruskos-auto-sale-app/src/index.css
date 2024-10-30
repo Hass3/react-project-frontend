@@ -17,7 +17,6 @@
     background-color: black
 }
 
-
   .h1{
     font-size: xx-large;
     font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
@@ -31,6 +30,7 @@
 .back-btn{
   background-color: gray;
   font: bold;
+  font-size: larger;
 }
 .card-container{
     display: flex;
@@ -47,11 +47,13 @@
 .car-card:hover{
     color: red;
 }
+
 .card-title{
     font-weight: bold;
     margin-bottom: 10px;
     justify-self: center;
 }
+
 .card-image{
     width: 200px;
     height: 150px;
@@ -64,9 +66,11 @@
 .remove-fav{
     background-color: red;
 }
+
 .link{
     color: rgb(245, 0, 0);
 }
+
 .link:hover{
     color: rgb(0, 0, 0);
 }
@@ -74,16 +78,21 @@
 .car-form{
     justify-self: center;
     background-color: black;
+    border-radius: 3%;
     width: 400px;
     height: 300px;
     justify-items: center;
 }
- 
+.car-form:hover{
+    background-color: rgb(48, 48, 48);
+}
+
 .carform-title{
     color: red;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .form-input{
     width: 300px;
     height:30px;
@@ -92,6 +101,7 @@
     border-radius: 5px;
     font-style: italic;
 }
+
 .form-btn{
     display: flex;
     margin-left: 65%;
@@ -103,6 +113,7 @@
 .about-img{
     width: 1000px;
 }
+
 .car-div{
     border: 3px solid;
     width: 300px;
@@ -110,12 +121,40 @@
     padding: 17px;
     
 }
+
 .car-div:hover{
     color: rgb(97, 97, 97);
 }
+
 .car-img{
     width: 259px;
     height: 194px;
     justify-self:center;
     object-fit:contain;
+}
+.support-form{
+    background-color: black;
+    border-radius: 3%;
+    width: 305px;
+    height: 96px;
+    margin-left: 20px;
+    justify-items: center;
+}
+
+.support-input{
+    width: 300px;
+    height:30px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-style: italic;
+}
+.support-btn{
+    width: 300px;
+    height:30px;
+    border:1px solid;
+    border-radius: 5px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: red;
 }

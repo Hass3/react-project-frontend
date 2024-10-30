@@ -17,7 +17,7 @@ function Home(){
         setCars([...cars, newCar])
     }
 
-
+console.log(cars)
     return(
        <div className='home'>
         <NavBar />
