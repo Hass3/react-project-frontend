@@ -1,18 +1,18 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-function CarCard({car}){
+function CarCard({ car }) {
     const [fav, setFav] = useState(false)
 
-    return(
+    return (
         <div className="car-card">
-            <button onClick={()=>setFav((fav)=>!fav)} className={fav? "remove-fav":''}>{!fav?"Add To Fav ☆": "★"}</button> 
+            <button onClick={() => setFav((fav) => !fav)} className={fav ? "remove-fav" : ''}>{!fav ? "Add To Fav ☆" : "★"}</button>
             <h1 className="card-title">{car.make}</h1>
-            <img className="card-image" src={car.image} alt={car.make}/>           
+            <img className="card-image" src={car.image} alt={car.make} />
             <h2>{car.model}</h2>
             <h2 className="year">{car.year}</h2>
-            <h3>Price:{"$"+car.price}</h3>
+            <h3>Price:{"$" + car.price}</h3>
             <p>Owner:{car.seller}</p>
-                <Link className="link" to={`/carseller/${car.id}`}>Send Private Message</Link>
+            <Link className="link" to={`/carseller/${car.id}`}>Send Private Message</Link>
         </div>
     )
 

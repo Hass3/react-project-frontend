@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
 import Support from "./pages/Support";
-import CarSellerPm from "./components/CarSellerPm";
+import CarSellerPm from "./pages/CarSellerPm";
 
 const routes = [
     {

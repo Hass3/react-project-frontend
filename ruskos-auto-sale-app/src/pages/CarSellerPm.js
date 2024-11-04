@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import NavBar from "./NavBar"
-import Header from "./Header"
+import NavBar from "../components/NavBar"
+import Header from "../components/Header"
 import { useParams } from "react-router-dom"
 function CarSellerPm() {
     const [car, setCar] = useState({})
