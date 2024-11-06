@@ -2,10 +2,8 @@ import { useState } from "react"
 import CarContainer from "./CarContainer"
 import CarForm from "./CarForm"
 import Search from "./Search";
-function CarPage({ cars, setCars }) {
+function CarPage({ cars, setCars, isFormOn }) {
     const [searched, setSearched] = useState('');
-    const [isFormOn, setIsFormOn] = useState(false);
-    const handleFormClick = () => setIsFormOn((isOn) => !isOn)
 
 
     function onSearch(search) {
@@ -20,10 +18,8 @@ function CarPage({ cars, setCars }) {
         car.make.toLowerCase().includes(searched.toLowerCase()) || car.model.toLowerCase().includes(searched.toLowerCase()))
 
 
-
     return (
         <>
-            <button className={!isFormOn ? "list-btn" : "back-btn"} onClick={handleFormClick}>{!isFormOn ? "List Car" : "Back"}</button>
             {!isFormOn ? <Search onSearch={onSearch} /> : null }
             {!isFormOn ? <h1 style={{ justifySelf: "center" }}>Browse Vehicles</h1>: null}
             <br />
