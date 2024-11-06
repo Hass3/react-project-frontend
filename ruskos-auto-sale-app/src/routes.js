@@ -4,6 +4,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Support from "./pages/Support";
 import CarSellerPm from "./pages/CarSellerPm";
 
+
 const routes = [
     {
         path:'/',
@@ -25,6 +26,7 @@ const routes = [
         element:<CarSellerPm />,
         errorElement:<ErrorPage />
     }
+
 ];
 
 export default routes
