@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 function CarCard({ car }) {
     const [fav, setFav] = useState(false)
 
+
+    
     return (
         <div className="car-card">
             <button onClick={() => setFav((fav) => !fav)} className={fav ? "remove-fav" : ''}>{!fav ? "Add To Fav ☆" : "★"}</button>
